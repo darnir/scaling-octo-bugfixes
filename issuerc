@@ -1,0 +1,25 @@
+export PROJ_NAME="GNU Wget"
+#export PROJ_DIR="/home/sauron/Programming/wget"
+export PROJ_DIR="/home/darnir/Code/wget"
+
+# Flags that change the warnings output by the compiler
+export WFLAGS="-Wall -Wextra -std=gnu99 -pedantic -Wno-language-extension-token \
+-Wunreachable-code -Wmissing-variable-declarations -Wshadow -Wundef \
+-Wmissing-prototypes"
+
+# Other flags to be sent to the compiler
+export CFLAGS="-fshow-column -fshow-source-location \
+-fno-caret-diagnostics -fno-color-diagnostics -fdiagnostics-format=clang \
+-fdiagnostics-show-option -fdiagnostics-show-category=name \
+-fdiagnostics-parseable-fixits -fdiagnostics-print-source-range-info"
+
+clean() {
+    make clean &> /dev/null
+}
+
+bootstrap() {
+    true
+}
+
+
+# vim: set ts=4 sts=4 sw=4 tw=80 ft=sh et :

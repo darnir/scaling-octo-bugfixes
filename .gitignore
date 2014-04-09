@@ -52,3 +52,9 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# Vim undo and swap files
+*.un~
+*.swp
+
+# config file for githubissue
+githubissuerc
